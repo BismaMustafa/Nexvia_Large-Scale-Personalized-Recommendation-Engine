@@ -44,34 +44,31 @@ recsys-engine/
 └── dags/
     └── recsys_retraining_dag.py   # Apache Airflow weekly retraining orchestration
 
+📊 Evaluation & A/B Test ResultsOffline Ranking Performance: Evaluated on the MovieLens 25M test split yielding competitive ranking accuracy (Recall@20 & NDCG@20).Online A/B Test Simulation:Control (Wide & Deep): 12.40% CTRTreatment (DCN Ranker): 14.10% CTRLift: +13.71% relative improvement ($Z = 3.55, p = 0.00039$, statistically significant).🚀 
 
-Evaluation & A/B Test Results
-Offline Ranking Performance: Evaluated on the MovieLens 25M test split yielding competitive ranking accuracy (Recall@20 & NDCG@20).
 
-Online A/B Test Simulation:
 
-Control (Wide & Deep): 12.40% CTR
 
-Treatment (DCN Ranker): 14.10% CTR
 
-Lift: +13.71% relative improvement (
-Z=3.55,p=0.00039, statistically significant).
+Getting Started & Local InstallationClone the repository:Bashgit clone [https://github.com/BismaMustafa/Nexvia_Large-Scale-Personalized-Recommendation-Engine.git](https://github.com/BismaMustafa/Nexvia_Large-Scale-Personalized-Recommendation-Engine.git)
+cd Nexvia_Large-Scale-Personalized-Recommendation-Engine
 
-🚀 Getting Started & Local Installation
-Clone the repository:
 
-Bash
-git clone [https://github.com/YOUR_USERNAME/recsys-engine.git](https://github.com/YOUR_USERNAME/recsys-engine.git)
-cd recsys-engine
-Create a virtual environment & install dependencies:
 
-Bash
-python -m venv venv
+
+Create a virtual environment & install dependencies:Bashpython -m venv venv
 source venv/bin/activate  # Windows: .\venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-Run the Recommendation API Dashboard:
 
-Bash
-uvicorn app:app --host 127.0.0.1 --port 8080
+
+
+
+
+Run the Recommendation API Dashboard:Bashuvicorn app:app --host 127.0.0.1 --port 8080
+
+
+
+
+
 Access the Web Dashboard:
 Open your browser and navigate to: http://127.0.0.1:8080/
