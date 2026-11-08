@@ -1,0 +1,11 @@
+pandas
+numpy
+pyarrow
+pyspark
+tensorflow
+faiss-cpu
+redis
+tritonclient[http]
+fastapi
+uvicorn
+scipy

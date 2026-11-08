@@ -1,0 +1,7 @@
+name: "wide_deep_ranker"
+platform: "tensorflow_savedmodel"
+max_batch_size: 512
+dynamic_batching {
+  preferred_batch_size: [ 64, 128, 256 ]
+  max_queue_delay_microseconds: 2000
+}
